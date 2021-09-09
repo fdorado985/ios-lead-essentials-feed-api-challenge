@@ -36,6 +36,6 @@ enum FeedImagesMapper {
 			throw RemoteFeedLoader.Error.invalidData
 		}
 
-		return root.items.map { $0.item }
+		return root.items.map(\.item)
 	}
 }
